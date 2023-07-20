@@ -112,14 +112,14 @@ export const TodoList = ( { condition }: { condition: ConditionProps }) => {
             </Checkbox.Root>
             {todo.status === 'completed' ? (
               <label
-                className="flex w-11/12 flex-wrap overflow-hidden pl-3 pr-4 font-medium line-through"
+                className="flex w-11/12 flex-wrap overflow-hidden pl-3 pr-4 font-semibold line-through text-gray-500 text-base"
                 htmlFor={String(todo.id)}
               >
                 {todo.body}
               </label>
             ) : (
               <label
-                className="flex w-11/12 flex-wrap overflow-hidden pl-3 pr-4 font-medium"
+                className="flex w-11/12 flex-wrap overflow-hidden pl-3 pr-4 font-semibold text-gray-700 text-base"
                 htmlFor={String(todo.id)}
               >
                 {todo.body}
