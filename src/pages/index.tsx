@@ -24,9 +24,9 @@ const Index = () => {
   const [parent, enableAnimations] = useAutoAnimate(/* optional config */)
   const [selectedIndex, setSelectedIndex] = useState('tab1')
   const activeStyle =
-    'TabsTrigger rounded-full border-2 border-solid  border-gray-200 px-6 py-3 bg-gray-700 text-white'
+    'TabsTrigger rounded-full border-2 border-solid  border-gray-200 px-6 py-3 bg-gray-700 text-white font-bold'
   const disableStyle =
-    'TabsTrigger rounded-full border-2 border-solid  border-gray-200 px-6 py-3'
+    'TabsTrigger rounded-full border-2 border-solid  border-gray-200 px-6 py-3 font-bold'
   const handleTabChange = (index: string) => {
     // Update the selectedIndex when a tab is checked
     setSelectedIndex(index)
